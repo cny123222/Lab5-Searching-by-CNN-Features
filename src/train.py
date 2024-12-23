@@ -2,13 +2,12 @@ import os
 import sys
 import argparse
 import torch
-import torch.backends.cudnn as cudnn
 import torch.nn as nn
 import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
 import wandb
-from model import resnet20
+from src.model import resnet20
 
 
 def parse_args(args):
@@ -17,11 +16,11 @@ def parse_args(args):
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("--lr", type=float, default=0.01, help="Learning rate")
-    parser.add_argument("--batch_size", type=int, default=128, help="Batch size")
+    parser.add_argument("--batch-size", type=int, default=128, help="Batch size")
     parser.add_argument("--epochs", type=int, default=50, help="Number of training epochs")
     parser.add_argument("--optimizer", type=str, default="AdamW", choices=["SGD", "Adam", "AdamW"], help="Optimizer type")
-    parser.add_argument("--weight_decay", type=float, default=0.01, help="Weight decay")
-    parser.add_argument("--step_size", type=int, default=40, help="Step size for learning rate scheduler")
+    parser.add_argument("--weight-decay", type=float, default=0.01, help="Weight decay")
+    parser.add_argument("--step-size", type=int, default=40, help="Step size for learning rate scheduler")
     parser.add_argument("--augment", type=bool, default=False, help="Augment data")
 
     args = parser.parse_args(args)
