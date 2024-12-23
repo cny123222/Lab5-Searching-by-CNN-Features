@@ -5,6 +5,9 @@ This project involves training a ResNet-20 model for image classification on the
 ## Example
 
 ![truck](figures/retrieval/retrieval_resnet50_1.png)
+![horse](figures/retrieval/retrieval_resnet50_12.png)
+![ship](figures/retrieval/retrieval_resnet50_69.png)
+![cat](figures/retrieval/retrieval_resnet50_9.png)
 
 ## File Structure
 

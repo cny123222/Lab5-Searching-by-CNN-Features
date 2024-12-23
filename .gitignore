@@ -163,13 +163,6 @@ cython_debug/
 
 # Dataset 
 data/
-cifar
-
-# Logs
-logs/
 
 # Wandb
-wandb/
-
-# Checkpoints
-checkpoint/
+wandb
